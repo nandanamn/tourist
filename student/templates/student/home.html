@@ -1,0 +1,10 @@
+{% extends 'student/master.html' %}
+ {% load static %}
+
+
+{% block content %}
+    <h1>school</h1>
+   
+    <img src="{% static 'image/1631863 (1).jpg' %}" alt="pic" height="100px" width="200px">
+    <a href="{% url 'viewmarks' %}">viewmarks</a>
+{% endblock %}
