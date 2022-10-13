@@ -1,10 +1,139 @@
-{% extends 'student/master.html' %}
- {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background-image: url(https://wallpapercave.com/wp/wp7877250.jpg);
+    font-family: Arial, Helvetica, sans-serif;}
+    
+* {box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: lightblue;
+}
 
 
-{% block content %}
-    <h1>school</h1>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 480px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+
+  <ul>
+    <li><a href="home">Home</a></li>
+    <li><a href="allplace">Places</a></li>
+    <li><a href="contact">Contact</a></li>
+    <li><a href="about">About</a></li>
+  </ul>
+
+
+
+    <h1><center>WELCOME TO ALAPPUZHA</h1></center>
+
+
+
+
+    <div class="gallery">
+        <a target="_blank" href="ampalappuzha">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/43/cc/37/ambalapuzha-sree-krishna.jpg?w=1200&h=-1&s=1" alt="Cinque Terre" width="600px" height="400px">
+        </a>
+        <div class="desc">Ambalapuzha Sree Krishna Temple</div>
+      </div>
+      
+      
+      <div class="gallery">
+        <a target="_blank" href="daytrip">
+          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/af/3f/73.jpg " width="600px" height="400px">
+        </a>
+        <div class="desc">DAY TRIP</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="alappuzha">
+          <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0f/9b/90/d8.jpg"   width="600px" height="400px">
+
+        </a>
+        <div class="desc">Top Picks in Alappuzha</div>
+      </div>
+    
+
+
    
-    <img src="{% static 'image/1631863 (1).jpg' %}" alt="pic" height="100px" width="200px">
-    <a href="{% url 'viewmarks' %}">viewmarks</a>
-{% endblock %}
+                    <div class="gallery">
+                      <a target="_blank" href="mararibeach">
+                      <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcT43Hzem3oo4XAUBcTGGU54k0X6n1RRFhBu4aONhY0eGdHqIXg_HYtOK3Qq1fm4n9ZoD-pTjb4oCesOLXKtYT3ZAA" width="600px" width="400px">
+                      </a>
+                      <div class="desc">Marari beach</div>
+                      
+                      </div>
+                    
+
+
+
+   
+                        <div class="gallery">
+                          <a target="_blank" href="coirmuseum">
+                          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/02/f5/ab/international-coir-museum.jpg?w=1200&h=-1&s=1" width="600px" width="400px">
+                          </a>
+                          <div class="desc">International Coir Museum</div>
+                          
+                          </div>
+
+                          <div class="gallery">
+                            <a target="_blank" href="lighthouse">
+                              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/dc/90/45/alappuzha-lighthouse.jpg?w=1200&h=-1&s=1" alt="lighthouse" width="600px" height="400px">
+                            </a>
+                            <div class="desc">Alappuzha Lighthouse</div>
+                          </div>
+
+
+
+
+
+      
+
+
+</body>
+</html>
